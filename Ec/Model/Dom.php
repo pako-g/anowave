@@ -79,7 +79,7 @@ else
          * {@inheritDoc}
          * @see DOMDocument::loadHTML()
          */
-        public function loadHTML($source, int $options = 0)
+        public function loadHTML($source, int $options = 0): bool
         {
             if (function_exists('libxml_use_internal_errors'))
             {
