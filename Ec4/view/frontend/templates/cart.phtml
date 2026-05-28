@@ -1,0 +1,26 @@
+<script data-ommit="true">
+
+    if (AEC.GA4)
+    {
+        ((cart_payload) => 
+        {
+            <?php
+            /**
+             * Datalayer push
+             */
+            ?>
+            
+            dataLayer.push(cart_payload);
+
+            <?php
+            /**
+             * Save cart payload in AEC() property for further reference
+             */
+            ?>
+            
+            AEC.Checkout.data = cart_payload;
+
+        })(<?php echo $block->getViewCart() ?>);
+    }
+    
+</script>

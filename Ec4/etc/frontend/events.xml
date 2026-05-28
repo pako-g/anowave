@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="ec_get_add_wishlist_attributes">
+        <observer name="ec4" instance="Anowave\Ec4\Observer\Wishlist\Attributes" />
+    </event>
+    <event name="ec_get_add_compare_attributes">
+        <observer name="ec4" instance="Anowave\Ec4\Observer\Compare\Attributes" />
+    </event>
+</config>
