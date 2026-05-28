@@ -441,7 +441,7 @@ class Protocol
 	 * @param \Magento\Sales\Model\Order $order
 	 * @return string
 	 */
-	public function getUA(\Magento\Sales\Model\Order $order = null)
+	public function getUA(?\Magento\Sales\Model\Order $order = null)
 	{
 		if ($order && $order->getId())
 		{
@@ -464,7 +464,7 @@ class Protocol
 	 *
 	 * @return array
 	 */
-	protected function getDefaultParameters(\Magento\Sales\Model\Order $order = null)
+	protected function getDefaultParameters(?\Magento\Sales\Model\Order $order = null)
 	{
 		return array
 		(
@@ -541,7 +541,7 @@ class Protocol
 	 * @param Mage_Sales_Model_Order $order
 	 * @return []
 	 */
-	public function getProducts(\Magento\Sales\Model\Order $order = null)
+	public function getProducts(?\Magento\Sales\Model\Order $order = null)
 	{
 		/**
 		 * Order products array

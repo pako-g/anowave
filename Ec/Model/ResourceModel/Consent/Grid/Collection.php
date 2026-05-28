@@ -66,8 +66,8 @@ abstract class Collection extends \Anowave\Ec\Model\ResourceModel\Consent\Collec
         $eventPrefix,
         $eventObject,
         $resourceModel,
-        AdapterInterface $connection = null,
-        AbstractDb $resource = null,
+        ?AdapterInterface $connection = null,
+        ?AbstractDb $resource = null,
         $model = 'Magento\Framework\View\Element\UiComponent\DataProvider\Document'
     )
     {
@@ -130,7 +130,7 @@ abstract class Collection extends \Anowave\Ec\Model\ResourceModel\Consent\Collec
      * @return $this
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
-    public function setSearchCriteria(SearchCriteriaInterface $searchCriteria = null)
+    public function setSearchCriteria(?SearchCriteriaInterface $searchCriteria = null)
     {
         return $this;
     }
@@ -164,7 +164,7 @@ abstract class Collection extends \Anowave\Ec\Model\ResourceModel\Consent\Collec
      * @return $this
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
-    public function setItems(array $items = null)
+    public function setItems(?array $items = null)
     {
         return $this;
     }

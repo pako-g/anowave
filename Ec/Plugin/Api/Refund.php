@@ -110,7 +110,7 @@ class Refund
      * @param \Magento\Sales\Model\RefundInvoice $subject
      * @return array
      */
-    public function beforeExecute(\Magento\Sales\Model\RefundInvoice $subject, $invoiceId, array $items = [],$isOnline = false,$notify = false,$appendComment = false,\Magento\Sales\Api\Data\CreditmemoCommentCreationInterface $comment = null,\Magento\Sales\Api\Data\CreditmemoCreationArgumentsInterface $arguments = null)
+    public function beforeExecute(\Magento\Sales\Model\RefundInvoice $subject, $invoiceId, array $items = [],$isOnline = false,$notify = false,$appendComment = false,?\Magento\Sales\Api\Data\CreditmemoCommentCreationInterface $comment = null,?\Magento\Sales\Api\Data\CreditmemoCreationArgumentsInterface $arguments = null)
     {
         return [$invoiceId, $items, $isOnline, $notify, $appendComment, $comment, $arguments];
     }
