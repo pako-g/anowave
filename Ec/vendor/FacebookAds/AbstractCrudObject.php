@@ -511,7 +511,7 @@ class AbstractCrudObject extends AbstractObject {
     array $ids,
     array $fields = array(),
     array $params = array(),
-    Api $api = null) {
+    ?Api $api = null) {
     if (empty($fields)) {
       $fields = static::getDefaultReadFields();
     }
