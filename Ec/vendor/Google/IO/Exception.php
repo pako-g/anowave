@@ -38,8 +38,8 @@ class Exception extends Google_Exception implements Google_Task_Retryable
   public function __construct(
       $message,
       $code = 0,
-      Exception $previous = null,
-      array $retryMap = null
+      ?Exception $previous = null,
+      ?array $retryMap = null
   ) {
     if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
       parent::__construct($message, $code, $previous);
